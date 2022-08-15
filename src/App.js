@@ -1,12 +1,12 @@
 import React from 'react';
 import {SafeAreaView, View, StyleSheet} from 'react-native';
-import IconAntDesign from 'react-native-vector-icons/AntDesign';
+import Header from './components/Header';
 
 function App() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <IconAntDesign name="hearto" size={30}/>
+        <Header />
       </View>
       <View style={styles.stories}>
       </View>
@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
 
   header: {
     flex: 1,
-    backgroundColor: 'red',
   },
 
   stories: {
