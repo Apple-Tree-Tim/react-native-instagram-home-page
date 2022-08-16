@@ -14,9 +14,9 @@ const Header = () => {
                 />
             </View>
             <View style={styles.icons}>
-                <IconAntDesign name="plussquareo" size={30} />
-                <IconAntDesign name="hearto" size={30} />
-                <IconFontisto name="messenger" size={30} />
+                <IconAntDesign name="plussquareo" size={30} color={'black'} />
+                <IconAntDesign name="hearto" size={30} color={'black'} />
+                <IconFontisto name="messenger" size={30} color={'black'} />
             </View>
         </SafeAreaView>
     )
