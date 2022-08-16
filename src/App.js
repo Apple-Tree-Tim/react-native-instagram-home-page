@@ -1,9 +1,13 @@
 import React from 'react';
-import {SafeAreaView, View, StyleSheet} from 'react-native';
+import {SafeAreaView, View, StyleSheet, FlatList} from 'react-native';
 import Header from './components/Header';
 import Stories from './components/Stories';
+import Posts from './components/Posts';
+import posts_data from './posts-data.json';
 
 function App() {
+  const renderPosts = ({item}) => <Posts post={item} />
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
@@ -13,6 +17,10 @@ function App() {
         <Stories />
       </View>
       <View style={styles.posts}>
+        <FlatList
+          data={posts_data}
+          renderItem={renderPosts}
+        />
       </View>
       <View style={styles.footer}>
       </View>
@@ -38,7 +46,6 @@ const styles = StyleSheet.create({
 
   posts: {
     flex: 7,
-    backgroundColor: 'green',
   },
 
   footer: {
