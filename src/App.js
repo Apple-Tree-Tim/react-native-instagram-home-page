@@ -1,6 +1,7 @@
 import React from 'react';
 import {SafeAreaView, View, StyleSheet} from 'react-native';
 import Header from './components/Header';
+import Stories from './components/Stories';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Header />
       </View>
       <View style={styles.stories}>
+        <Stories />
       </View>
       <View style={styles.posts}>
       </View>
@@ -31,8 +33,7 @@ const styles = StyleSheet.create({
   },
 
   stories: {
-    flex: 3,
-    backgroundColor: 'blue',
+    flex: 2,
   },
 
   posts: {
