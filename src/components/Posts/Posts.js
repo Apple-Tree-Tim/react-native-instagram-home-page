@@ -8,6 +8,14 @@ import IconFeather from 'react-native-vector-icons/Feather';
 
 
 const Posts = ({post}) => {
+    const isThereDescription = () => {
+        if(post.description != null) {
+            return <View style={styles.description}>
+                <Text style={styles.username_des}>{post.username}</Text>
+                <Text style={styles.des_text}>{post.description}</Text>
+            </View>
+        }
+    }
     return (
 
         <SafeAreaView style={styles.container}>
@@ -36,6 +44,8 @@ const Posts = ({post}) => {
                     <IconFeather name="bookmark" size={30} color={'black'} />
                 </View>
             </View>
+
+            {isThereDescription()}
 
             <View style={styles.comment}>
                 <View style={styles.comment_text}>

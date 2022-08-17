@@ -32,6 +32,7 @@ export default StyleSheet.create({
     username: {
         alignSelf: 'center',
         marginLeft: 15,
+        fontSize: 15,
         fontWeight: 'bold',
         color: 'black',
         textDecorationLine: 'underline',
@@ -61,6 +62,23 @@ export default StyleSheet.create({
 
     nonvisible_activity: {
         marginRight: 5,
+    },
+
+    description: {
+        flexDirection: 'row',
+    },
+
+    username_des: {
+        marginLeft: 16,
+        fontWeight: 'bold',
+        fontSize: 15,
+        color: 'black',
+    },
+
+    des_text: {
+        marginLeft: 6,
+        color: 'black',
+        fontSize: 15,
     },
     
     comment:{
