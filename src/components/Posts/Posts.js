@@ -8,6 +8,7 @@ import IconFeather from 'react-native-vector-icons/Feather';
 
 
 const Posts = ({post}) => {
+
     const isThereDescription = () => {
         if(post.description != null) {
             return <View style={styles.description}>
@@ -16,10 +17,26 @@ const Posts = ({post}) => {
             </View>
         }
     }
+
+    const isThereAnyLike = () => {
+        if(post.howmanylike != null) {
+            return <View style={styles.like}>
+                <View style={styles.liked_user_border}>
+                    <Image style={styles.liked_user} source={{uri : 'https://images.unsplash.com/photo-1530268729831-4b0b9e170218'}}/>
+                </View>
+                <View style={styles.liked_user_border}>
+                    <Image style={styles.liked_user} source={{uri : 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91'}}/>
+                </View>
+                <View style={styles.liked_user_border}>
+                    <Image style={styles.liked_user} source={{uri : 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df'}}/>
+                </View>
+                <Text style={styles.like_text}>randomguy and {post.howmanylike} other people liked</Text>
+            </View>
+        }
+    }
+
     return (
-
         <SafeAreaView style={styles.container}>
-
             <View style={styles.header}>
                 <View style={styles.user_detail}>
                     <Image style={styles.profilepic} source={{uri: post.profilepicURL}} />
@@ -29,11 +46,9 @@ const Posts = ({post}) => {
                     <IconEntypo name="dots-three-horizontal" size={20} color={'black'}/>
                 </View>
             </View>
-
             <View style={styles.shared}>
                 <Image style={styles.shared_image} source={{uri: post.sharedURL}} />
             </View>
-
             <View style={styles.activity}>
                 <View style={styles.visible_activity}>
                     <IconAntDesign name="hearto" size={30} color={'black'} />
@@ -44,9 +59,8 @@ const Posts = ({post}) => {
                     <IconFeather name="bookmark" size={30} color={'black'} />
                 </View>
             </View>
-
+            {isThereAnyLike()}
             {isThereDescription()}
-
             <View style={styles.comment}>
                 <View style={styles.comment_text}>
                     <Image style={styles.myprofilepic} source={{uri: post.myprofilepicURL}} />
@@ -58,13 +72,10 @@ const Posts = ({post}) => {
                     <IconAntDesign name="pluscircleo" size={15} />
                 </View>
             </View>
-
             <View style={styles.date}>
                 <Text>{post.postDate}</Text>
             </View>
-            
         </SafeAreaView>
-
     )
 }
 

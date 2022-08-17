@@ -64,6 +64,37 @@ export default StyleSheet.create({
         marginRight: 5,
     },
 
+    like: {
+        flexDirection: 'row',
+        margin: 5,
+        paddingLeft: 5,
+    },
+
+    liked_user_border: {
+        width: 26,
+        height: 26,
+        borderRadius: 26 / 2,
+        borderWidth: 2,
+        borderColor: 'white',
+        backgroundColor: 'white',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginRight: -6,
+    },
+
+    liked_user: {
+        width: '90%',
+        height: '90%',
+        borderRadius: 26 / 2,
+    },
+
+    like_text: {
+        fontSize: 15,
+        color: 'black',
+        marginLeft: 12,
+        marginTop: 2,
+    },
+
     description: {
         flexDirection: 'row',
     },
