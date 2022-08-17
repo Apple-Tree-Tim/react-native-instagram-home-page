@@ -6,5 +6,22 @@
         "sharedURL": "https://images.unsplash.com/photo-1495567720989-cebdbdd97913",
         "myprofilepicURL": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
         "postDate": "6 gün önce"
+    },
+    {
+        "id": 1,
+        "profilepicURL": "https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6",
+        "username": "men1",
+        "sharedURL": "https://images.unsplash.com/photo-1468581264429-2548ef9eb732",
+        "myprofilepicURL": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+        "postDate": "10 August"
+    },
+    {
+        "id": 2,
+        "profilepicURL": "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+        "username": "women2",
+        "sharedURL": "https://images.unsplash.com/photo-1527519135413-1e146b552e10",
+        "myprofilepicURL": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+        "postDate": "7 August"
     }
+
 ]

@@ -38,10 +38,15 @@ const Posts = ({post}) => {
             </View>
 
             <View style={styles.comment}>
-                <Image style={styles.myprofilepic} source={post.myprofilepicURL} />
-                <Text>Yorum ekle...</Text>
-                <IconAntDesign name="heart" size={20} color={'red'}/>
-                <IconAntDesign name="pluscircle" size={20} />
+                <View style={styles.comment_text}>
+                    <Image style={styles.myprofilepic} source={{uri: post.myprofilepicURL}} />
+                    <Text style={styles.add_comment}>Yorum ekle...</Text>
+                </View>
+                <View style={styles.comment_icon}>
+                    <IconAntDesign name="heart" size={15} color={'red'} />
+                    <IconFontisto name="fire" size={15} color={'orange'} />
+                    <IconAntDesign name="pluscircleo" size={15} />
+                </View>
             </View>
 
             <View style={styles.date}>
