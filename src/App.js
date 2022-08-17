@@ -3,6 +3,7 @@ import {SafeAreaView, View, StyleSheet, FlatList} from 'react-native';
 import Header from './components/Header';
 import Stories from './components/Stories';
 import Posts from './components/Posts';
+import Footer from './components/Footer';
 import posts_data from './posts-data.json';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         />
       </View>
       <View style={styles.footer}>
+        <Footer />
       </View>
     </SafeAreaView>
   )
@@ -50,7 +52,6 @@ const styles = StyleSheet.create({
 
   footer: {
     flex: 1,
-    backgroundColor: 'purple',
   },
 
 })
