@@ -22,13 +22,13 @@ const Posts = ({post}) => {
         if(post.howmanylike != null) {
             return <View style={styles.like}>
                 <View style={styles.liked_user_border}>
-                    <Image style={styles.liked_user} source={{uri : 'https://images.unsplash.com/photo-1530268729831-4b0b9e170218'}}/>
+                    <Image style={styles.liked_user} source={{uri : 'https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'}}/>
                 </View>
                 <View style={styles.liked_user_border}>
-                    <Image style={styles.liked_user} source={{uri : 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91'}}/>
+                    <Image style={styles.liked_user} source={{uri : 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'}}/>
                 </View>
                 <View style={styles.liked_user_border}>
-                    <Image style={styles.liked_user} source={{uri : 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df'}}/>
+                    <Image style={styles.liked_user} source={{uri : 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'}}/>
                 </View>
                 <Text style={styles.like_text}>randomguy and {post.howmanylike} other people liked</Text>
             </View>
