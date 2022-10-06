@@ -15,6 +15,6 @@
 :white_check_mark: For styling, I used StyleSheet.<br>
 :white_check_mark: Stories and Posts components are reusable, so can create/delete post/story as much as you want.<br>
 
-*OTHER NOTES* :<br>
+*USED TECHNOLOGİES AND HOW THEY CAN İNSTALL* :<br>
 -> I used "react-native-vector-icons" packet in this project. You can install this packet, as follows steps in this guide.<br>
 -> https://www.npmjs.com/package/react-native-vector-icons#installation<br>
